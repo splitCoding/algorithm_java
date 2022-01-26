@@ -20,6 +20,12 @@ public class Problem_42577 {
                 }
             });
             HashSet<String> check = new HashSet<String>(phone_book.length);
+            for(String number : phone_book){
+                for(int i=1;i<number.length();i++)
+                    if(check.contains(number.substring(0,i)))
+                        return false;
+                check.add(number);
+            }
             return true;
         }
     }
