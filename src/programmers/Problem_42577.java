@@ -19,6 +19,7 @@ public class Problem_42577 {
                     return o1.length() - o2.length();
                 }
             });
+            HashSet<String> check = new HashSet<String>(phone_book.length);
             return true;
         }
     }
