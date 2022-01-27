@@ -7,6 +7,13 @@ public class Problem_15651 {
     static StringBuilder sb = new StringBuilder();
     static int N, M;
     static int[] selected;
+
+    static void input() {
+        FastReader scan = new FastReader();
+        N = scan.nextInt();
+        M = scan.nextInt();
+        selected = new int[M];
+    }
 }
 
 class FastReader {
