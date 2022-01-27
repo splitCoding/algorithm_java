@@ -12,6 +12,9 @@ public class Problem_42578 {
         public int solution(String[][] clothes) {
             int ret = 1;
             HashMap<String, Integer> check = new HashMap<String, Integer>(clothes.length);
+            for (String[] cloth : clothes) {
+                check.merge(cloth[1], 1, (existValue, addValue) -> (existValue + addValue));
+            }
             return ret;
         }
     }
