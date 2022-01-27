@@ -30,4 +30,10 @@ public class Problem_15649 {
             }
         }
     }
+
+    public static void main(String[] args) {
+        input();
+        rec_func(0);
+        System.out.println(sb.toString());
+    }
 }
