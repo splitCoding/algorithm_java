@@ -15,7 +15,13 @@ public class Problem_42578 {
             for (String[] cloth : clothes) {
                 check.merge(cloth[1], 1, (existValue, addValue) -> (existValue + addValue));
             }
-            return ret;
+            if (check.size() == 1) {
+                return clothes.length;
+            } else {
+                for (int value : check.values())
+                    ret *= value + 1;
+            }
+            return ret - 1;
         }
     }
 }
