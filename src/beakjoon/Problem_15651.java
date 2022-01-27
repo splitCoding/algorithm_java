@@ -4,6 +4,9 @@ import java.util.*;
 import java.io.*;
 
 public class Problem_15651 {
+    static StringBuilder sb = new StringBuilder();
+    static int N, M;
+    static int[] selected;
 }
 
 class FastReader {
