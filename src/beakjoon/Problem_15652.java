@@ -14,4 +14,10 @@ public class Problem_15652 extends Problem_15651 {
             }
         }
     }
+
+    public static void main(String[] args) {
+        input();
+        rec_func(0);
+        System.out.println(sb.toString());
+    }
 }
