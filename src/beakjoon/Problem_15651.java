@@ -14,6 +14,19 @@ public class Problem_15651 {
         M = scan.nextInt();
         selected = new int[M];
     }
+
+    static void rec_func(int k) {
+        if (k == M) {
+            for (int num : selected) sb.append(num).append(" ");
+            sb.append('\n');
+        } else {
+            for (int i = 1; i <= N; i++) {
+                selected[k] = i;
+                rec_func(k + 1);
+                selected[k] = 0;
+            }
+        }
+    }
 }
 
 class FastReader {
